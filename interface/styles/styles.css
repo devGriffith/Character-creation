@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@668&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  overflow: hidden;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 43px;
+}
+
+header h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #0083ED;
+}
+
+header p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+main {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+
+main .local {
+  width: 320px;
+  height: 362px;
+  padding: 21px;
+  border-radius: 12px;
+  background: rgb(0, 37, 44);
+}
+
+main .local .image {
+  width: 278px;
+  height: 150px;
+  background-image: url('../assets/example.svg');
+
+  margin-bottom: 14px;
+}
+
+main .local .description {
+  width: 278px;
+  height: 75px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+
+  gap: 14px;
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 14px;
+}
+
+main .local .description i {
+  width: 74px;
+  height: 74px;
+  border-radius: 8px 0px 0px 8px;
+  background: rgba(255, 255, 255, 0.12);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  font-size: 25px;
+}
+
+main .local .description .name {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main .local .description .name small {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+
+  color: rgba(255, 255, 255, 0.57);
+  text-transform: uppercase;
+}
+
+main .local .description .name span {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+main .person {
+  width: 320px;
+  height: 455px;
+  border-radius: 12px;
+  background: rgb(0, 37, 44);
+
+  padding: 21px;
+  position: relative;
+}
+
+main .person .person-created h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  text-align: center;
+
+  margin-top: 21px;
+  margin-bottom: 12px;
+}
+
+main .person .person-created .infos {
+  width: 276px;
+  height: 55px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.04);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 16px;
+}
+
+main .person .person-created .infos + .infos {
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+main .person .person-created .infos p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  text-transform: uppercase;;
+}
+
+main .person .person-created .infos p:last-child {
+  font-weight: 700;
+  font-size: 14px;
+  color: rgb(51, 86, 184);
+}
+
+main .person .new-person {
+  gap: 24px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+main .person .new-person h4 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+main .person .new-person h4 span {
+  color: rgb(92, 168, 255);
+}
+
+main .person .new-person i {
+  width: 134px;
+  height: 134px;
+  clip-path: circle();
+  background: rgba(138, 255, 92, 0.541);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+main .person .new-person i:hover {
+  background: rgb(171, 255, 92);
+}
+
+main .person .new-person p {
+  width: 237px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+main .person .new-person p span {
+  color: rgb(92, 255, 206);
+  cursor: pointer;;
+}
+
+main .person .new-person p span:hover {
+  color: rgb(65, 170, 255);
+}
+
+main button {
+  width: 278px;
+  height: 62px;
+  border: none;
+  border-radius: 8px;
+  background: rgb(65, 170, 255);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+
+  padding: 0 35px;
+  display: flex;  
+  align-items: center;
+
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s linear;
+}
+
+main button i {
+  width: 62px;
+  height: 62px;
+  border-radius: 0px 8px 8px 0px;
+  background: rgba(255, 255, 255, 0.12);
+
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+
+  right: 0;
+  position: absolute !important;
+}
+
+main button:hover {
+  background: rgb(65, 170, 255);
+}
+
+#create-char {
+  width: 543px;
+  height: 642px;
+  border-radius: 12px;
+  background: linear-gradient(27deg, #040305 0.34%, #412E5B 100%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  padding: 40px;
+}
+
+#create-char .header {
+  gap: 25px;
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
+#create-char .header i {
+  min-width: 131px;
+  min-height: 131px;
+  border-radius: 50%;
+  background: #0083ED;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: black;
+  font-size: 40px;
+}
+
+#create-char .header .message h2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+#create-char .header .message p {
+  width: 277px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+#create-char .info {
+  width: 451px;
+  height: 64px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.04);
+
+  display: flex;
+  align-items: center;
+
+  position: relative;;
+  margin-bottom: 14px;
+}
+
+#create-char .info input {
+  width: 100%;
+  height: 100%;
+
+  border: none;
+  background: transparent;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+
+  outline: none;
+  padding: 0 28px;
+
+  position: absolute;;
+}
+
+#create-char .info label {
+  right: 28px;
+  position: absolute;;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+#create-char .info button {
+  width: 136px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.08);
+
+  display: flex ;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-left: 6px;
+  padding: 0 14px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+
+  cursor: pointer;
+}
+
+#create-char .info button:first-child {
+  margin-left: 22px;
+}
+
+#create-char .info button i {
+  color: white;
+  font-size: 18px;
+}
+
+#create-char .info button.selected {
+  background: rgb(65, 170, 255);
+}
+
+
+.buttons {
+  gap: 4px;
+  display: flex;
+  align-items: center;
+}
+
+#create-char .new-button {
+  width: 371px;
+  height: 75px;
+  background: #412E5B;
+  border-radius: 6px 0px 0px 6px;
+
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border: none;
+  padding: 0 40px;
+
+  cursor: pointer;
+} 
+
+
+#create-char .new-button:last-child  {
+  width: 75px;
+  height: 75px;
+  background: #0083ED;
+  border-radius: 0px 6px 6px 0px;
+
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

@@ -1,0 +1,12 @@
+
+{
+    "maxChars": 3,
+    "url": "https://quanticstore.com.br/",
+    "trocaPersonagem":[-1082.1,-247.52,37.78],
+    "locals": [
+        { "id": 1, "coord": [55.26,-879.78,30.35], "name": "Great Ocean Highway", "image": "https://media.discordapp.net/attachments/931304471164772372/1055604517158273174/como_comprar_garagens_gta_5_capa-e1610772744111-700x394.png" },
+        { "id": 2, "coord": [1622.56,3568.96,35.15], "name": "Duluoz Avenue", "image": "https://media.discordapp.net/attachments/931304471164772372/1055604517158273174/como_comprar_garagens_gta_5_capa-e1610772744111-700x394.png" },
+        { "id": 3, "coord": [-133.74,6353.28,31.49], "name": "Grapedseed Avenue", "image": "https://media.discordapp.net/attachments/931304471164772372/1055604517158273174/como_comprar_garagens_gta_5_capa-e1610772744111-700x394.png" },
+        { "id": 4, "name": "ULTIMA POSIÇÃO", "image": "https://media.discordapp.net/attachments/931304471164772372/1055604517158273174/como_comprar_garagens_gta_5_capa-e1610772744111-700x394.png" }
+    ]
+}

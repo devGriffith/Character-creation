@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+
+    <title>quantic</title>
+  </head>
+  <body>
+    <header>
+      <h1>Bem-Vindo</h1>
+      <p>Escolha o local que deseja nascer:</p>
+    </header>
+    <main></main>
+    <div id="create-char" style="display: none;">
+      <div class="header">
+        <i class="fa-solid fa-user-plus"></i>
+        <div class="message">
+          <h2>NOVO PERSONAGEM</h2>
+          <p>Utilize um nome normal, se, nenhum tipo de trocadilho ou duplo sentido.</p>
+        </div>
+      </div>
+      <div class="info">
+        <input type="text" placeholder="Pedro" id="name" onkeypress="return somenteNumeros2(event)">
+        <label>NOME</label>
+      </div>
+      <div class="info">
+        <input type="text" placeholder="Silva" id="surname" onkeypress="return somenteNumeros2(event)">
+        <label>SOBRENOME</label>
+      </div>
+      <div class="info">
+        <input type="number" placeholder="20" id="age" onkeypress="return somenteNumeros(event)">
+        <label>IDADE</label>
+      </div>
+      <div class="info">
+        <button class="selected" onclick="genreSelected(this, 'mulher')">
+          MULHER
+          <i class="fa-solid fa-venus"></i>
+        </button>
+        <button  onclick="genreSelected(this, 'homem')">
+          HOMEM
+          <i class="fa-regular fa-mars"></i>
+        </button>
+        <label>GENÊRO</label>
+      </div>
+      <div class="buttons">
+        <button class="new-button" onclick="start()">
+          COMEÇAR
+          <i class="fa-solid fa-right-to-bracket"></i>
+        </button>
+        <button class="new-button" onclick="backSelectChar()">
+          <i class="fa-solid fa-rotate-left"></i>
+        </button>
+      </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
